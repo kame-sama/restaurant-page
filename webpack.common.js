@@ -10,6 +10,17 @@ module.exports = {
       scriptLoading: 'defer',
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'img/[name].[hash].[ext]',
+        },
+      },
+    ],
+  },
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),

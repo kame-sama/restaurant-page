@@ -1,1 +1,1 @@
-# Bountiful Bites Restaurant Page
+# Waffle Haven Café Page
